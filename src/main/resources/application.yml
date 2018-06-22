@@ -1,0 +1,21 @@
+spring:
+  application:
+     name: vic-ms-saludo  # Service registers under this name
+  freemarker:
+    enabled: false           
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+
+# HTTP Server
+server:
+  port: 3001   # HTTP (Tomcat) port
+
+logging:
+ level:
+  org:
+   springframework:
+    web: INFO
+
